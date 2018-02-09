@@ -2,10 +2,12 @@
 (function ($) {
 $(document).ready(function() {
     // hire smooth scroll
-
-    $( window ).resize(function() {
-      var ratio = calculateAspectRatioFit()
-    });
+    var waypoint = new Waypoint({
+      element: document.querySelector("#about-me"),
+      handler: function() {
+        $(".progress-bar").addClass("slideInLeft");
+      }
+    })
     $(".hire").click(()=>{
       $('html,body').animate({
         scrollTop: $("#get-in-touch").offset().top},
@@ -74,12 +76,7 @@ $(document).ready(function() {
       }
     }
   });
-  var waypoint = new Waypoint({
-    element: document.querySelector("#about-me"),
-    handler: function() {
-      $(".progress-bar").addClass("slideInLeft");
-    }
-  })
+
 
   new WOW().init();
   $(".owl-next").html('<i class="fa fa-long-arrow-right" aria-hidden="true"></i>');
