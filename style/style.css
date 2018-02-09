@@ -6,16 +6,7 @@ h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
 }
-#hideAll
- {
-    position: fixed;
-    left: 0px; 
-    right: 0px; 
-    top: 0px; 
-    bottom: 0px; 
-    background-color: white;
-    z-index: 99; /* Higher than anything else in the document */
- }
+
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
@@ -626,7 +617,6 @@ h4{
 #project-show-1 .background-image{
     background: url("../assets/tictactoe.png");
 }
-
 #project-show-2 .background-image{
     background: url("../assets/weather-app.png");
 }
