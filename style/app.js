@@ -79,4 +79,8 @@ $(document).ready(function() {
   new WOW().init();
   $(".owl-next").html('<i class="fa fa-long-arrow-right" aria-hidden="true"></i>');
   $(".owl-prev").html('<i class="fa fa-long-arrow-left" aria-hidden="true"></i>');
+  setTimeout(DisplayPage,3000);
+  function DisplayPage(){
+    document.getElementById("hideAll").style.display = "none";
+  }
 }(jQuery));
